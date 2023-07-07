@@ -1,0 +1,170 @@
+#newArray{
+
+margin-left: 2%;
+}
+#bars{
+  display: flex;
+  justify-content: center;
+  width:100%;
+  height:550px;
+  background: black;
+     /* linear-gradient(to bottom, #000066 0%, #993399 103%); */
+}
+a{
+    color: #fcde67 !important;
+}
+.anchorHeight{
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+.barstyle{
+  width: 0.1rem;
+  margin: 0 1px;
+  background: linear-gradient(to bottom, #00ffff 0%, #ff66ff 103%);
+}
+.heading,.navbar,#btnSection{
+  background-color: #fcde67;
+  padding: 1% 2%;
+  /* black; */
+}
+#btnSection{
+  line-height: 4;
+}
+h2,h6{
+  color: #030e12;
+  /* #51ff0d; */
+  margin: 2% 0;
+  font-family: 'Ubuntu',sans-serif;
+  letter-spacing: 2px;
+}
+
+
+.navbtn{
+text-decoration: none;
+font-family: 'Ubuntu',sans-serif;
+font-weight: 500;
+height: 50px;
+font-size: 12px;
+letter-spacing: 2px;
+padding: 0 30px;
+transition: all 0.5s;
+position: relative;
+text-transform: uppercase;
+color: transparent;
+border: 1px solid #030e12;
+background-color: #fcde67;
+}
+.navbtn::before{
+content: "New Array";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height:100%;
+background-color:#fcde67;
+ /* black; */
+color:#030e12;
+ /* #51ff0d; */
+display: flex;
+justify-content: center;
+align-items: center;
+transition: all 0.5s;
+}
+.navbtn::after{
+content: "New Array";
+position: absolute;
+top: 0;
+left: -100%;
+width: 100%;
+height:100%;
+background-color:#fcde67;
+/* black; */
+color:#030e12;
+/* #51ff0d; */
+display: flex;
+justify-content: center;
+align-items: center;
+transition: all 0.5s;
+transform: scale(0)  rotateY(0deg);
+opacity: 0;
+}
+
+.navbtn:hover:after{
+left:0;
+transform: scale(1) rotateY(360deg);
+opacity: 1;
+}
+
+.navbtn:hover:before{
+left:100%;
+transform: scale(0) rotateY(360deg);
+opacity: 0;
+}
+
+#Bubble::before{
+  content: "Bubble Sort"
+}
+#Bubble::after{
+  content: "Bubble Sort"
+}
+
+#Selection::before{
+  content: "Selection sort"
+}
+#Selection::after{
+  content: "Selection sort"
+}
+#Quick::before{
+  content: "Quick Sort"
+}
+#Quick::after{
+  content: "Quick Sort"
+}
+#Merge::after{
+  content: "merge sort"
+}
+#Merge::before{
+  content: "merge sort"
+}
+#Insertion::before{
+  content: "insertion sort"
+}
+#Insertion::after{
+  content: "insertion sort"
+}
+#Slow::after{
+  content: "slow"
+}
+#Slow::before{
+  content: "slow"
+}
+#Medium::before{
+  content: "medium"
+}
+#Medium::after{
+  content: "medium"
+}
+
+.adjustText{
+  position: absolute;
+  margin-top: 4px;
+}
+.slidediv{
+  border: 1px solid black
+}
+#arr_size,#sort_speed{
+  margin-top: 23%;
+}
+.arraybtn{
+  flex-wrap: wrap;
+}
+
+@media (max-width :991px)
+{
+  .navbtn{
+
+       height:
+
+  }
+}
